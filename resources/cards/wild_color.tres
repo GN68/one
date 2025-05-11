@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardIdentity" load_steps=3 format=3 uid="uid://bcporucef7kur"]
+
+[ext_resource type="Script" uid="uid://dn287gjcdd2xe" path="res://scripts/card_identity.gd" id="1_ta2f5"]
+[ext_resource type="Texture2D" uid="uid://n4f0kvrh3fmg" path="res://textures/card0002.png" id="2_ta2f5"]
+
+[resource]
+script = ExtResource("1_ta2f5")
+name = "Wild Color"
+texture = ExtResource("2_ta2f5")
+tags = Array[String](["wild", "red", "yellow", "green", "blue", "color"])
+description = ""

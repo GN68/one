@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardIdentity" load_steps=3 format=3 uid="uid://bhqahmjgn2jgt"]
+
+[ext_resource type="Script" uid="uid://dn287gjcdd2xe" path="res://scripts/card_identity.gd" id="1_y6bo0"]
+[ext_resource type="Texture2D" uid="uid://im67uf5y4pdo" path="res://textures/card0041.png" id="2_p6tlm"]
+
+[resource]
+script = ExtResource("1_y6bo0")
+name = "Blue Three"
+texture = ExtResource("2_p6tlm")
+tags = Array[String](["blue", "three"])
+description = ""

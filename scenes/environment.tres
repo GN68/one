@@ -1,0 +1,7 @@
+[gd_resource type="Environment" format=3 uid="uid://85100vdfs8tk"]
+
+[resource]
+background_mode = 1
+background_color = Color(0.537255, 0.117647, 0.168627, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.387573, 0.399443, 0.496094, 1)

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardIdentity" load_steps=3 format=3 uid="uid://1137rd1qxc2f"]
+
+[ext_resource type="Script" uid="uid://dn287gjcdd2xe" path="res://scripts/card_identity.gd" id="1_dlyla"]
+[ext_resource type="Texture2D" uid="uid://5s60bydv6kp6" path="res://textures/card0064.png" id="2_4yyfc"]
+
+[resource]
+script = ExtResource("1_dlyla")
+name = "Green Reverse"
+texture = ExtResource("2_4yyfc")
+tags = Array[String](["green", "reverse"])
+description = ""

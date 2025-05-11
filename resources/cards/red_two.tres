@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="CardIdentity" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/card_identity.gd" id="1_ibygq"]
+
+[resource]
+script = ExtResource("1_ibygq")
+name = "Red Two"
+tags = Array[String](["red", "two"])

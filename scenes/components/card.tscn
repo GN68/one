@@ -1,0 +1,46 @@
+[gd_scene load_steps=10 format=3 uid="uid://dui64ysahyf0n"]
+
+[ext_resource type="Script" uid="uid://cnhkj2cqywkk8" path="res://scripts/card.gd" id="1_xk85y"]
+[ext_resource type="Resource" uid="uid://d1usejbhhmp4v" path="res://resources/cards/blue_nine.tres" id="2_6u04p"]
+[ext_resource type="Texture2D" uid="uid://3pdbvhtgfjwr" path="res://textures/card0001.png" id="2_phura"]
+[ext_resource type="Texture2D" uid="uid://bhnkk42vakcl" path="res://textures/card0047.png" id="3_80wep"]
+[ext_resource type="Environment" uid="uid://85100vdfs8tk" path="res://scenes/environment.tres" id="5_80wep"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rwy07"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+diffuse_mode = 3
+albedo_texture = ExtResource("3_80wep")
+roughness = 0.0
+
+[sub_resource type="QuadMesh" id="QuadMesh_6u04p"]
+material = SubResource("StandardMaterial3D_rwy07")
+size = Vector2(1, 1.57)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dq8eh"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+diffuse_mode = 3
+albedo_texture = ExtResource("2_phura")
+roughness = 0.0
+
+[sub_resource type="QuadMesh" id="QuadMesh_phura"]
+material = SubResource("StandardMaterial3D_dq8eh")
+size = Vector2(1, 1.57)
+
+[node name="Card" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 0.873075, 0.487585, 0, -0.487585, 0.873075, 0, 0, 0)
+script = ExtResource("1_xk85y")
+card_identity = ExtResource("2_6u04p")
+
+[node name="MeshFront" type="MeshInstance3D" parent="."]
+mesh = SubResource("QuadMesh_6u04p")
+
+[node name="MeshBack" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
+mesh = SubResource("QuadMesh_phura")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("5_80wep")

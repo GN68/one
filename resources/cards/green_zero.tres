@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardIdentity" load_steps=3 format=3 uid="uid://c2qjmfvbofdfm"]
+
+[ext_resource type="Script" uid="uid://dn287gjcdd2xe" path="res://scripts/card_identity.gd" id="1_xtg7x"]
+[ext_resource type="Texture2D" uid="uid://du6wuibfcwj58" path="res://textures/card0061.png" id="2_k5yps"]
+
+[resource]
+script = ExtResource("1_xtg7x")
+name = "Green Zero"
+texture = ExtResource("2_k5yps")
+tags = Array[String](["green", "zero"])
+description = ""

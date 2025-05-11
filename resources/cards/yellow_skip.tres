@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardIdentity" load_steps=3 format=3 uid="uid://buoyvr0qsrs0k"]
+
+[ext_resource type="Script" uid="uid://dn287gjcdd2xe" path="res://scripts/card_identity.gd" id="1_1qh64"]
+[ext_resource type="Texture2D" uid="uid://dkrvbt6i2bypp" path="res://textures/card0024.png" id="2_2k5gd"]
+
+[resource]
+script = ExtResource("1_1qh64")
+name = "Yellow Skip"
+texture = ExtResource("2_2k5gd")
+tags = Array[String](["yellow", "skip"])
+description = ""
