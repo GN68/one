@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Cardset" load_steps=5 format=3 uid="uid://ifaqm7f27loy"]
+
+[ext_resource type="Script" uid="uid://dn287gjcdd2xe" path="res://scripts/card_identity.gd" id="1_pl33w"]
+[ext_resource type="Script" uid="uid://b7nnodppgrav3" path="res://scripts/cardset.gd" id="2_iyk8f"]
+[ext_resource type="Resource" uid="uid://bcporucef7kur" path="res://resources/cards/wild_color.tres" id="2_kkivk"]
+[ext_resource type="Resource" uid="uid://bblmwad8jb8v3" path="res://resources/cards/wild_draw.tres" id="3_tjdb1"]
+
+[resource]
+script = ExtResource("2_iyk8f")
+name = "Wilds"
+description = "all the classic wild cards"
+cards = Array[ExtResource("1_pl33w")]([ExtResource("2_kkivk"), ExtResource("3_tjdb1"), ExtResource("3_tjdb1"), ExtResource("3_tjdb1"), ExtResource("2_kkivk"), ExtResource("2_kkivk"), ExtResource("2_kkivk"), ExtResource("2_kkivk")])
+metadata/_custom_type_script = "uid://b7nnodppgrav3"

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Cardset" load_steps=16 format=3 uid="uid://4vtp1ytsawfn"]
+
+[ext_resource type="Script" uid="uid://dn287gjcdd2xe" path="res://scripts/card_identity.gd" id="1_ctmnt"]
+[ext_resource type="Resource" uid="uid://bwuh83ruhq838" path="res://resources/cards/red_one.tres" id="2_ywa5w"]
+[ext_resource type="Resource" path="res://resources/cards/red_two.tres" id="3_4vjws"]
+[ext_resource type="Resource" uid="uid://cbuiukbi867bs" path="res://resources/cards/red_three.tres" id="4_m78ly"]
+[ext_resource type="Resource" uid="uid://cxbrmy0hswcn3" path="res://resources/cards/red_four.tres" id="5_222sp"]
+[ext_resource type="Resource" uid="uid://c4o666trangd5" path="res://resources/cards/red_five.tres" id="6_2v6ka"]
+[ext_resource type="Resource" uid="uid://e78fhblm3d4h" path="res://resources/cards/red_six.tres" id="7_76b78"]
+[ext_resource type="Resource" uid="uid://dr15x337e1oma" path="res://resources/cards/red_seven.tres" id="8_1hsgu"]
+[ext_resource type="Resource" uid="uid://clxgxunvu7tt6" path="res://resources/cards/red_eight.tres" id="9_278pq"]
+[ext_resource type="Resource" uid="uid://cf8wcmyn5k3iy" path="res://resources/cards/red_nine.tres" id="10_vuf0t"]
+[ext_resource type="Resource" uid="uid://d1fnngumawvt" path="res://resources/cards/red_zero.tres" id="11_j7p5t"]
+[ext_resource type="Resource" uid="uid://mbarsjjcuaal" path="res://resources/cards/red_skip.tres" id="12_tq3f1"]
+[ext_resource type="Resource" uid="uid://c3xg8kyh2ew0q" path="res://resources/cards/red_reverse.tres" id="13_nd4b3"]
+[ext_resource type="Resource" uid="uid://box32q0tcbb5j" path="res://resources/cards/red_draw.tres" id="14_74pfu"]
+[ext_resource type="Script" uid="uid://b7nnodppgrav3" path="res://scripts/cardset.gd" id="15_lhcim"]
+
+[resource]
+script = ExtResource("15_lhcim")
+name = "Reds"
+description = "all the classic red cards"
+cards = Array[ExtResource("1_ctmnt")]([ExtResource("2_ywa5w"), ExtResource("3_4vjws"), ExtResource("4_m78ly"), ExtResource("5_222sp"), ExtResource("6_2v6ka"), ExtResource("7_76b78"), ExtResource("8_1hsgu"), ExtResource("9_278pq"), ExtResource("10_vuf0t"), ExtResource("11_j7p5t"), ExtResource("12_tq3f1"), ExtResource("13_nd4b3"), ExtResource("14_74pfu")])
+metadata/_custom_type_script = "uid://b7nnodppgrav3"
