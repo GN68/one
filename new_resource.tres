@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PlayerIdentity" load_steps=2 format=3 uid="uid://bifat5d4g1cn1"]
+
+[ext_resource type="Script" uid="uid://bsrr4hh20vfht" path="res://scripts/player_identity.gd" id="1_g5ko2"]
+
+[resource]
+script = ExtResource("1_g5ko2")
+Uid = ""
+is_host = false
+username = ""
+metadata/_custom_type_script = "uid://bsrr4hh20vfht"

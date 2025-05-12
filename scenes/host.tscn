@@ -78,14 +78,6 @@ min_value = 1.0
 value = 7.0
 rounded = true
 
-[node name="MarginContainer" type="MarginContainer" parent="PaddingPanel/VBoxContainer"]
-layout_mode = 2
-
-[node name="ColorRect" type="ColorRect" parent="PaddingPanel/VBoxContainer/MarginContainer"]
-custom_minimum_size = Vector2(0, 64)
-layout_mode = 2
-color = Color(0.339844, 0.18187, 0.18187, 1)
-
 [node name="Button" type="Button" parent="PaddingPanel/VBoxContainer"]
 layout_mode = 2
 text = "Create"

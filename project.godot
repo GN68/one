@@ -19,6 +19,8 @@ config/icon="res://icon.svg"
 
 FirebaseLite="*res://addons/godot_firebase_lite/firebase.tscn"
 UsernameService="*res://scripts/username_service.gd"
+Player="*res://scripts/player.gd"
+ChannelMaster="*res://scripts/channel_master.gd"
 
 [display]
 
