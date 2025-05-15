@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3eof1ji5utpq"]
+
+[ext_resource type="Script" uid="uid://cmqbc2fqj4ktp" path="res://scenes/lobby/lobby.gd" id="1_jekxk"]
+[ext_resource type="Script" uid="uid://b2nh40f1liy0c" path="res://scripts/padding_panel.gd" id="1_mlusu"]
+[ext_resource type="LabelSettings" uid="uid://decomculdc0ns" path="res://resources/label_settings/header.tres" id="2_jekxk"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_jekxk")
+
+[node name="PaddingContainer" type="Container" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mlusu")
+metadata/_custom_type_script = "uid://b2nh40f1liy0c"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PaddingContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PaddingContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ReturnButton" type="Button" parent="PaddingContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "  x  "
+
+[node name="Label" type="Label" parent="PaddingContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Rooms"
+label_settings = ExtResource("2_jekxk")
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="PaddingContainer/VBoxContainer"]
+clip_contents = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="List" type="VBoxContainer" parent="PaddingContainer/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label2" type="Label" parent="PaddingContainer/VBoxContainer"]
+layout_mode = 2
+text = "Pick a room to join"
+label_settings = ExtResource("2_jekxk")
+horizontal_alignment = 1
+
+[connection signal="pressed" from="PaddingContainer/VBoxContainer/HBoxContainer/ReturnButton" to="." method="_on_return_button_pressed"]

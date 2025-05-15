@@ -1,0 +1,128 @@
+[gd_scene load_steps=5 format=3 uid="uid://bibsy6talowtw"]
+
+[ext_resource type="Script" uid="uid://df8a1jf2nl6d6" path="res://scenes/host/host.gd" id="1_jypb2"]
+[ext_resource type="Script" uid="uid://b2nh40f1liy0c" path="res://scripts/padding_panel.gd" id="2_a8hfn"]
+[ext_resource type="LabelSettings" uid="uid://o54cmliv3pj8" path="res://resources/label_settings/title.tres" id="3_qsvfm"]
+[ext_resource type="LabelSettings" uid="uid://decomculdc0ns" path="res://resources/label_settings/header.tres" id="4_6ycxv"]
+
+[node name="HostRoom" type="Node"]
+script = ExtResource("1_jypb2")
+
+[node name="PaddingPanel" type="Container" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_a8hfn")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PaddingPanel"]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PaddingPanel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="CancelContainer" type="HBoxContainer" parent="PaddingPanel/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="CancelButton" type="Button" parent="PaddingPanel/HBoxContainer/VBoxContainer/CancelContainer"]
+layout_mode = 2
+text = "  X  "
+
+[node name="TitleLabel" type="Label" parent="PaddingPanel/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Host a Room"
+label_settings = ExtResource("3_qsvfm")
+horizontal_alignment = 1
+
+[node name="DescriptionLabel" type="Label" parent="PaddingPanel/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Pick the settings your game will follow"
+horizontal_alignment = 1
+
+[node name="PresetsOption" type="OptionButton" parent="PaddingPanel/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+selected = 0
+item_count = 1
+popup/item_0/text = "Default"
+popup/item_0/id = 0
+
+[node name="GamerulesTitle" type="Label" parent="PaddingPanel/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Gamerules"
+label_settings = ExtResource("4_6ycxv")
+horizontal_alignment = 1
+
+[node name="Gamerules" type="GridContainer" parent="PaddingPanel/HBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+columns = 2
+
+[node name="CardsetsTitle" type="Label" parent="PaddingPanel/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Cardsets"
+label_settings = ExtResource("4_6ycxv")
+horizontal_alignment = 1
+
+[node name="Cardsets" type="GridContainer" parent="PaddingPanel/HBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+columns = 4
+
+[node name="GridContainer" type="GridContainer" parent="PaddingPanel/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+columns = 2
+
+[node name="Label4" type="Label" parent="PaddingPanel/HBoxContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Starting Card Count"
+horizontal_alignment = 2
+
+[node name="SpinBox" type="SpinBox" parent="PaddingPanel/HBoxContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 1.0
+value = 7.0
+rounded = true
+
+[node name="CreateButton" type="Button" parent="PaddingPanel/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Create"
+
+[node name="VSeparator" type="VSeparator" parent="PaddingPanel/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="PaddingPanel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="Title" type="Label" parent="PaddingPanel/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Joined Players"
+label_settings = ExtResource("3_qsvfm")
+horizontal_alignment = 1
+
+[node name="JoinedPlayers" type="Label" parent="PaddingPanel/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "~
+~
+~
+~"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="PaddingPanel/HBoxContainer/VBoxContainer2/JoinedPlayers"]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="pressed" from="PaddingPanel/HBoxContainer/VBoxContainer/CancelContainer/CancelButton" to="." method="_on_cancel_button_pressed"]
