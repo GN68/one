@@ -87,8 +87,13 @@ func _init(player: PlayerIdentity = Player.identity) -> void:
 	joinable = Channel.new("rooms/"+room_id+"/joinable",true)
 	players = Channel.new("rooms/"+room_id+"/players",{})
 
+
+# TODO: add a join method for remote rooms
+
+
 func is_remote() -> bool:
 	return _is_remote
+
 
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_PREDELETE:

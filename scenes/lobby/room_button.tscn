@@ -44,3 +44,5 @@ horizontal_alignment = 1
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 text = "Closed"
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
